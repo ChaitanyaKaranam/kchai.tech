@@ -1,45 +1,62 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Showcase from "../components/projects/Showcase"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Landing/>
+    <div className="home">
+      <Landing/>
+      <Portfolio/>
+    </div>
   </Layout>
 )
 
 function Landing(){
   return(
     <section>
-      <div>
-        <h2>Hi 👋,</h2>
-        <h2>I am Krishna Chaitanya, Full Stack Web Developer</h2>
-        <h2>I create courses on Web Development</h2>
-        <button>Check Courses 👆</button>
+      <div className="landing">
+        <div>
+          <div>
+            <h1>Hi 👋,</h1>
+            <h1>I am Krishna Chaitanya, Full Stack Web Developer</h1>
+          </div>
+          <div>
+            <h1 className="showcase-heading">I create courses on Web Development</h1>
+          </div>
+          <div>
+            <button className="btn-lg btn-showcase black-text">Check Courses 👆</button>
+          </div>
+        </div>
       </div>
-      <Typography/>
     </section>
   )
 }
 
-function Typography(){
+function Portfolio(){
   return(
     <section>
-      <div>
-        <h1>Showcase Heading 1</h1>
-        <h1 className="showcase-heading-2">Showcase Heading 2</h1>
-        <br/>
-        <h2>Heading Main</h2>
-        <h2 className="heading-main-2">Heading Main 2</h2>
-        <br/>
-        <h3>Heading Section</h3>
-        <h3 className="heading-section-2">Heading Section 2</h3>
-        <h3 className="heading-section-3">Heading Section 3</h3>
-        <br/>
-        <p className="content-main">Content Main</p>
-        <p>Content Section</p>
+      <div className="portfolio">
+        <div>
+          <h2>💼 Portfolio</h2>
+          <p className="content-main">Here are some of the projects that I worked on in the past</p>
+          <hr/>
+        </div>
+        <Showcase
+          title="Artha"
+          description="Learning Platform that curates data from YouTube, GitHub and Udemy. This is still on-going project. Open-sourced on GitHub."
+          stack="Using ReactJS, Apollo, GraphQL and ExpressJS"
+          img=""
+        />
+        <hr/>
+        <Showcase
+          title="Rick and Morty Router"
+          description="This is a fun project that I built as a part of my React Routers course. It uses hooks and routers to provide bookmark-able URL's"
+          stack="Using ReactJS, Hooks and React Router"
+          img=""
+        />
       </div>
     </section>
   )

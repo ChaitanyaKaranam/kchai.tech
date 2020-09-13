@@ -1,0 +1,30 @@
+html{
+    font-size: 16px;
+    @media (max-width: 1500px) {
+        font-size: 13px;
+    }
+    @media (max-width: 1200px) {
+        font-size: 11px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 10px;
+    }
+    scroll-behavior: smooth;
+}
+
+button{
+    @include shadow;
+    @include btn-props($green);
+    font-family: 'Open Sans', sans-serif;
+    font-size: $content;
+    padding: 1rem;
+    min-width: 15rem;
+    color: white;
+    border-radius: 0.6rem;
+    font-weight: $bold;
+}
+
+hr{
+    border: 0.5px solid $grey-lt-2;
+    margin: 3rem 0rem;
+}

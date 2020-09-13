@@ -1,0 +1,51 @@
+//------------------------------------------
+//               Components                |
+//------------------------------------------
+
+@mixin shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+// Button Properties
+@mixin btn-props($color) {
+    background-color: $color;
+    border: 3px solid $color;
+    cursor: pointer;
+    &:active:not(.disabled),
+    &:active:not(.loading){
+        transform: translate(0, 2px);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    &:hover{
+        transform: translate(0, -3px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.541);
+        background-color: darken($color: $color, $amount: 15%);
+    }
+    @include transition;
+}
+
+
+//------------------------------------------
+//                 Animations              |
+//------------------------------------------
+
+@mixin transition($seconds: 100ms, $animation: ease, $type: all) {
+    transition: $seconds $animation $type;
+}
+
+//------------------------------------------
+//                 Layout                  |
+//------------------------------------------
+
+@mixin layout {
+    padding: 0rem 10rem;
+    @media (max-width: 1500px) {
+        padding: 0rem 7rem;
+    }
+    @media (max-width: 1200px) {
+        padding: 0rem 7rem;
+    }
+    @media (max-width: 1000px) {
+        padding: 0rem 5rem;
+    }
+}

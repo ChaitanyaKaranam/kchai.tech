@@ -4,12 +4,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, .showcase-heading{
+.showcase-heading{
     font-size: $showcase-heading;
     font-weight: $extra-bold;
 }
 
-.showcase-heading-2{
+h1, .showcase-heading-2{
     font-size: $showcase-heading-2;
     font-weight: $semi-bold;
 }
