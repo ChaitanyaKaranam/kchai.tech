@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Showcase({ title, description, stack, project_link, source_link, img }) {
+function Showcase({ title, description, stack, project_link, source_link, src }) {
     return (
         <div className="showcase">
             <h3>{title}</h3>
@@ -21,8 +21,8 @@ function Showcase({ title, description, stack, project_link, source_link, img })
                         <button className="secondary">Source Code</button>
                     </div>
                 </div>
-                <div>
-                    <img src={img} alt={title} />
+                <div className="showcase__content-video">
+                    <iframe  src={src} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

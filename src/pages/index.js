@@ -40,7 +40,7 @@ function Portfolio(){
     <section>
       <div className="portfolio">
         <div>
-          <h2>💼 Portfolio</h2>
+          <h2>Portfolio</h2>
           <p className="content-main">Here are some of the projects that I worked on in the past</p>
           <hr/>
         </div>
@@ -48,14 +48,14 @@ function Portfolio(){
           title="Artha"
           description="Learning Platform that curates data from YouTube, GitHub and Udemy. This is still on-going project. Open-sourced on GitHub."
           stack="Using ReactJS, Apollo, GraphQL and ExpressJS"
-          img=""
+          src="https://www.youtube.com/embed/rO2U3eFQ440"
         />
         <hr/>
         <Showcase
           title="Rick and Morty Router"
           description="This is a fun project that I built as a part of my React Routers course. It uses hooks and routers to provide bookmark-able URL's"
           stack="Using ReactJS, Hooks and React Router"
-          img=""
+          src="https://www.youtube.com/embed/bprkmZAqWJM"
         />
       </div>
     </section>
