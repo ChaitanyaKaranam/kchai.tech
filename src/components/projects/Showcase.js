@@ -3,7 +3,7 @@ import React from 'react';
 function Showcase({ title, description, stack, project_link, source_link, src }) {
     return (
         <div className="showcase">
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <br />
             <div className="showcase__content">
                 <div className="showcase__content-details">

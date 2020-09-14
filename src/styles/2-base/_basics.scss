@@ -1,5 +1,5 @@
 html{
-    font-size: 16px;
+    font-size: 15px;
     @media (max-width: 1500px) {
         font-size: 13px;
     }
@@ -25,6 +25,6 @@ button{
 }
 
 hr{
-    border: 0.5px solid $grey-lt-2;
+    border: 0px;
     margin: 3rem 0rem;
 }

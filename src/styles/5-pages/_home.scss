@@ -5,13 +5,13 @@
 }
 
 .landing{
-    @include layout;
     height: 95vh;
     display: grid;
     place-items: center;
     background-color: $blue-dr-1;
     color: white;
     div{
+        @include compact;
         display: grid;
         place-items: center;
         grid-gap: 3rem;
@@ -25,7 +25,36 @@
 }
 
 .portfolio{
-    @include layout;
     display: grid;
-    row-gap: 1rem;
+    row-gap: 2rem;
+    @include compact;
+    h1{
+        font-weight: $extra-bold;
+    }
+    .portfolio__header{
+        margin-bottom: 3rem;
+    }
+}
+
+.skills{
+    background-color: $blue-dr-1;
+    padding-bottom: 5rem;
+    h1{
+        font-weight: $extra-bold;
+        color: white;
+    }
+    .skills__header{
+        @include compact;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+    .skills__content{
+        @include compact;
+        padding-bottom: 5rem;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 6rem;
+        overflow-y: auto;
+    }
 }
