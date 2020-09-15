@@ -57,4 +57,41 @@
         column-gap: 6rem;
         overflow-y: auto;
     }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        //-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.877); 
+        border-radius: 7px;
+        background-color: $blue-dr-2;
+    }     
+    ::-webkit-scrollbar-thumb {
+        border-radius: 7px;
+        // -webkit-box-shadow: inset 0 0 6px rgba(63, 43, 136, 0.5);
+        background-color: rgba(193, 170, 255, 0.26);
+        &:hover{
+            background-color: rgba(193, 170, 255, 0.466);
+        }
+    }
+}
+
+.videos{
+    @include compact;
+    h1{
+        font-weight: $extra-bold;
+    }
+    .videos__header{        
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+    .videos__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .videos__subscribe{
+        margin-top: 5rem;
+        display: grid;
+        place-items: center;
+        row-gap: 2rem;
+    }
 }

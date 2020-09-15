@@ -19,3 +19,7 @@
     font-size: $heading-main-2;
     font-weight: $extra-bold;
 }
+
+.btn-subscribe{
+    @include btn-props($red);
+}

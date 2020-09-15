@@ -12,6 +12,7 @@ const IndexPage = () => (
       <Landing />
       <Portfolio />
       <Skills />
+      <Videos />
     </div>
   </Layout>
 )
@@ -95,6 +96,34 @@ function Skills() {
             skill={'Gatsby'}
             img={'/icons/stack/Gatsby.svg'}
           />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Videos() {
+  return (
+    <section>
+      <div className="videos">
+        <div className="videos__header">
+          <h1>Course Videos</h1>
+          <p>Here are some of my course videos from my YouTube Channel - <strong>Kchai Programming</strong></p>
+        </div>
+        <div className="videos__content">
+          <div>
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/bprkmZAqWJM" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/jByPO9TM0Dw" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe width="400" height="215" src="https://www.youtube.com/embed/EetplXDgZI0" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div className="videos__subscribe">
+          <p>Like what you see? Check out all the videos</p>
+          <button className="btn-lg btn-subscribe">Start Learning 📔</button>
         </div>
       </div>
     </section>
