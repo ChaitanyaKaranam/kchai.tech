@@ -24,6 +24,14 @@
     @include transition;
 }
 
+@mixin input-props{
+    font-family: inherit;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    width: 20rem;
+}
+
 
 //------------------------------------------
 //                 Animations              |

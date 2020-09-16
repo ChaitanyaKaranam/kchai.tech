@@ -13,6 +13,7 @@ const IndexPage = () => (
       <Portfolio />
       <Skills />
       <Videos />
+      <Contact />
     </div>
   </Layout>
 )
@@ -125,6 +126,37 @@ function Videos() {
           <p>Like what you see? Check out all the videos</p>
           <button className="btn-lg btn-subscribe">Start Learning 📔</button>
         </div>
+      </div>
+    </section>
+  )
+}
+
+function Contact() {
+  return (
+    <section>
+      <div className="contact">
+        <div className="contact__header">
+          <h1>Get in Touch</h1>
+        </div>
+        <form>
+          <div className="form-field">
+            <label htmlFor="fullname">Full Name: </label>
+            <input id="fullname" type="text" name="fullname" required/>
+          </div>
+          <div className="form-field">
+            <label htmlFor="email">Email: </label>
+            <input id="email" type="email" name="email" required/>
+          </div>
+          <div className="form-field">
+            <label htmlFor="subject">Subject: </label>
+            <input id="subject" type="text" name="subject" required/>
+          </div>
+          <div className="form-field">
+            <label htmlFor="message">Message: </label>
+            <textarea id="message" type="textarea" name="message" required/>
+          </div>
+          <button className="btn-lg btn-showcase black-text">Submit Message 📧</button>
+        </form>
       </div>
     </section>
   )

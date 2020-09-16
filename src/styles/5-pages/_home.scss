@@ -95,3 +95,33 @@
         row-gap: 2rem;
     }
 }
+
+.contact{
+    background-color: $blue-dr-1;
+    padding-bottom: 5rem;
+    h1{
+        font-weight: $extra-bold;
+        color: white;
+    }
+    .contact__header{
+        @include compact;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    form{
+        @include compact;
+        display: grid;
+        place-items: center;
+        div{
+            width: 50%;
+        }
+        input, textarea {
+            width: 100%;
+        }
+        label{
+            color: white;
+        }
+    }
+}
