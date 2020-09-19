@@ -1,0 +1,58 @@
+html{
+    font-size: 15px;
+    @media (max-width: 1500px) {
+        font-size: 13px;
+    }
+    @media (max-width: 1200px) {
+        font-size: 11px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 10px;
+    }
+    scroll-behavior: smooth;
+}
+
+button, 
+.button{
+    @include shadow;
+    @include btn-props($green);
+    font-family: 'Open Sans', sans-serif;
+    font-size: $content;
+    padding: 1rem;
+    min-width: 15rem;
+    color: white;
+    border-radius: 0.6rem;
+    font-weight: $bold;
+}
+
+a[type="button"]{
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+hr{
+    border: 0px;
+    margin: 3rem 0rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select{
+    @include input-props;
+    font-size: $content;
+    font-weight: $semi-bold;
+    height: 4rem;
+    border: 0px;
+}
+
+textarea{
+    @include input-props;
+    height: 15rem;
+    width: 100%;
+    font-size: $content;
+    font-weight: $semi-bold;
+}

@@ -1,0 +1,73 @@
+//------------------------------------------
+//               Components                |
+//------------------------------------------
+
+@mixin shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+// Button Properties
+@mixin btn-props($color) {
+    background-color: $color;
+    border: 3px solid $color;
+    cursor: pointer;
+    &:active:not(.disabled),
+    &:active:not(.loading){
+        transform: translate(0, 2px);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    &:hover{
+        transform: translate(0, -3px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.541);
+        background-color: darken($color: $color, $amount: 15%);
+    }
+    @include transition;
+}
+
+@mixin input-props{
+    font-family: inherit;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    width: 20rem;
+}
+
+
+//------------------------------------------
+//                 Animations              |
+//------------------------------------------
+
+@mixin transition($seconds: 100ms, $animation: ease, $type: all) {
+    transition: $seconds $animation $type;
+}
+
+//------------------------------------------
+//                 Layout                  |
+//------------------------------------------
+
+@mixin layout {
+    padding: 0rem 15rem;
+    @media (max-width: 1500px) {
+        padding: 0rem 7rem;
+    }
+    @media (max-width: 1200px) {
+        padding: 0rem 7rem;
+    }
+    @media (max-width: 1000px) {
+        padding: 0rem 5rem;
+    }
+}
+
+@mixin compact {
+    max-width: 1300px;
+    margin: 0 auto;
+    @media (max-width: 1500px) {
+        max-width: 1000px;
+    }
+    @media (max-width: 1200px) {
+        max-width: 900px;
+    }
+    @media (max-width: 1000px) {
+        max-width: 700px;
+    }
+}

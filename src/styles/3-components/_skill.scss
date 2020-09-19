@@ -1,0 +1,18 @@
+.skill{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 2rem;
+    h3{
+        text-align: center;
+        color: white;
+    }
+    .skill__image{
+        width: 12rem;
+        height: 12rem;
+        @include shadow;
+        background-color: $blue-dr-2;
+        border-radius: 10rem;
+        display: grid;
+        place-items: center;
+    }
+}

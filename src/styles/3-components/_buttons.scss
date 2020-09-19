@@ -1,0 +1,25 @@
+.btn-showcase{
+    @include btn-props($green-lt-1);
+}
+
+.secondary{
+    background-color: white;
+    border: 2px solid $green;
+    color: $black;
+    &:hover{
+        color: white;
+    }
+}
+
+.btn-lg{
+    width: 25rem;
+    height: 5.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: $heading-main-2;
+    font-weight: $extra-bold;
+}
+
+.btn-subscribe{
+    @include btn-props($red);
+}
