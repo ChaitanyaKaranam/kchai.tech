@@ -126,22 +126,22 @@ function Videos() {
         </div>
         <div className="videos__content">
         <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/5xvdKzMxy0E" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/5xvdKzMxy0E" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
           <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/bprkmZAqWJM" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/bprkmZAqWJM" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
           <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/IK7vlvJsUn4" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/IK7vlvJsUn4" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
           <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/rO2U3eFQ440" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/rO2U3eFQ440" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
           <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/EetplXDgZI0" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/EetplXDgZI0" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
           <div>
-            <iframe title="kchai programming" width="400" height="215" src="https://www.youtube.com/embed/Ho4wOkWAna8" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <iframe title="kchai programming" src="https://www.youtube.com/embed/Ho4wOkWAna8" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
         </div>
         <div className="videos__subscribe">
