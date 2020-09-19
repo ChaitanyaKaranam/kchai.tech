@@ -14,7 +14,7 @@ import GatsbySVG from '../images/stack/Gatsby.svg'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="KChai" />
     <div className="home">
       <Landing />
       <Portfolio />
