@@ -5,6 +5,13 @@ import Showcase from "../components/projects/Showcase"
 import SEO from "../components/seo"
 import Skill from "../components/skills"
 
+import ReactSVG from '../images/stack/React-icon.svg'
+import ReduxSVG from '../images/stack/Redux.svg'
+import NodeSVG from '../images/stack/Nodejs.svg'
+import JSSVG from '../images/stack/JS.svg'
+import XDSVG from '../images/stack/XD.svg'
+import GatsbySVG from '../images/stack/Gatsby.svg'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -81,27 +88,27 @@ function Skills() {
         <div className="skills__content">
           <Skill
             skill={'React'}
-            img={'/icons/stack/React-icon.svg'}
+            img={ReactSVG}
           />
           <Skill
             skill={'Redux'}
-            img={'/icons/stack/Redux.svg'}
+            img={ReduxSVG}
           />
           <Skill
             skill={'JavaScript'}
-            img={'/icons/stack/JS.svg'}
+            img={JSSVG}
           />
           <Skill
             skill={'NodeJS'}
-            img={'/icons/stack/Nodejs.svg'}
+            img={NodeSVG}
           />
           <Skill
             skill={'Adobe XD'}
-            img={'/icons/stack/XD.svg'}
+            img={XDSVG}
           />
           <Skill
             skill={'Gatsby'}
-            img={'/icons/stack/Gatsby.svg'}
+            img={GatsbySVG}
           />
         </div>
       </div>
