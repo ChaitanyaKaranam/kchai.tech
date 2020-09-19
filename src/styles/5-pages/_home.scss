@@ -1,7 +1,6 @@
 .home{
     display: grid;
-    row-gap: 8rem;
-    margin-bottom: 5rem;
+    row-gap: 5rem;
 }
 
 .landing{
@@ -26,7 +25,7 @@
 
 .portfolio{
     display: grid;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
     @include compact;
     h1{
         font-weight: $extra-bold;
@@ -87,6 +86,7 @@
     .videos__content{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;
     }
     .videos__subscribe{
         margin-top: 5rem;

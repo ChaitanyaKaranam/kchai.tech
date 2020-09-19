@@ -15,14 +15,13 @@ function Showcase({ title, description, stack, project_link, source_link, src })
                         <p className="heading-section-2">How did I build this ?</p>
                         <p>{stack}</p>
                     </div>
-                    <div>
-                        <button>View Project</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <button className="secondary">Source Code</button>
+                    <div className="showcase__links">
+                        <a type="button" href={project_link} target="_blank" rel="noopener noreferrer" className="button">View Project</a>
+                        <a type="button" href={source_link} target="_blank" rel="noopener noreferrer" className="button secondary">Source Code</a>
                     </div>
                 </div>
                 <div className="showcase__content-video">
-                    <iframe  src={src} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="kchai programming" src={src} frameBorder="0" allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
         </div>

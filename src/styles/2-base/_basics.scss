@@ -12,7 +12,8 @@ html{
     scroll-behavior: smooth;
 }
 
-button{
+button, 
+.button{
     @include shadow;
     @include btn-props($green);
     font-family: 'Open Sans', sans-serif;
@@ -22,6 +23,12 @@ button{
     color: white;
     border-radius: 0.6rem;
     font-weight: $bold;
+}
+
+a[type="button"]{
+    text-decoration: none;
+    display: grid;
+    place-items: center;
 }
 
 hr{

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Courses on Full-Stack Web Development`,
-    description: `Browser projects and courses on Full-stack web development`,
+    description: `Browse projects and courses on Full-stack web development`,
     author: `Chaitanya Karanam`,
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/brand-icon.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
