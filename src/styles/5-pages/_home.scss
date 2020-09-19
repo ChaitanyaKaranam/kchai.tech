@@ -87,6 +87,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 2rem;
+        iframe{
+            width: 400px;
+            height: 215px;
+        }
     }
     .videos__subscribe{
         margin-top: 5rem;
@@ -122,6 +126,33 @@
         }
         label{
             color: white;
+        }
+    }
+}
+
+@media (max-width: 1500px){
+    .videos{
+        .videos__content{
+            grid-template-columns: 1fr 1fr;
+            iframe{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .videos{
+        .videos__content{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+    .contact{
+        form{
+            div{
+                width: 90%;
+            }
         }
     }
 }
